@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:text="Hi, \nSelamat datang!"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Isi data pribadi Anda"
+            android:layout_below="@id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:hint="Username"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"
+            android:layout_marginTop="240dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Kata Sandi"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Masuk"
+            android:textColor="@color/black"
+            android:layout_marginTop="450dp"
+            android:backgroundTint="@color/grey"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:text="Daftar"
+            android:textColor="@color/black"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/green"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/btnMata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="302dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_eye_tertutup" />
+
+    </RelativeLayout>
+
+</LinearLayout>

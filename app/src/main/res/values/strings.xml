@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RumahSakit</string>
+    <string name="url">http://192.168.100.8:8080/api</string>
+</resources>
